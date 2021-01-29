@@ -50,9 +50,9 @@ export default {
 
   methods: {
     onSearchClicked() {
-      this.getIncidents()
+      this.getAllGists()
     },
-    async getIncidents() {
+    async getAllGists() {
       const res = await this.$store.dispatch('gists/getAllGists', {
         username: this.username,
       })
